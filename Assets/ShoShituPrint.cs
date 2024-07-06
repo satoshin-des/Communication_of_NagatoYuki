@@ -23,9 +23,6 @@ public class ShoShituPrint : MonoBehaviour
         await NagatoPrints(t, "これは緊急脱出プログラムである。起動させる場合はエンターキーを、そうでない場合はそれ以外のキーを選択せよ。起動させた場合、あなたは時空修正の機会を得る。ただし成功は保証できない。また帰還の保証もできない。");
         await Task.Delay(500);
 
-        await NagatoPrints(t, "それは情報統合思念体にもない力。この情報創造能力を解析すれば自律進化の糸口がつかめるかもしれないと考えた。");
-        await Task.Delay(500);
-
         await NagatoPrints(t, "このプログラムが起動するのは一度きりである。実行ののち、消去される。非実行が選択された場合は起動せずに消去される。 \nReady?");
         await Task.Delay(500);
 
