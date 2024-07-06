@@ -14,4 +14,9 @@ public class SceneChanges : MonoBehaviour
     {
         SceneManager.LoadScene("ShoShituScene");
     }
+
+    public void KyoGaku()
+    {
+        SceneManager.LoadScene("KyoGakuScene");
+    }
 }

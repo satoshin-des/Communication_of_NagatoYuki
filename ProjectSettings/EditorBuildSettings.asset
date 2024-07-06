@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YuUtuScene.unity
     guid: 511deb1a428cd044b9ef2b9ca1c2e8bb
+  - enabled: 1
+    path: Assets/Scenes/KyoGakuScene.unity
+    guid: 0efbb293763e64447900fb15560708f1
   m_configObjects: {}

@@ -11,35 +11,31 @@ public class KyoGakuPrint : MonoBehaviour
 
     async void Start()
     {
-        await NagatoPrints(t, "見えてる？");
+        await NagatoPrints(t, "心配はいらない");
         await Task.Delay(500);
 
-        await KyonPrints(t, "ああ");
+        await KyonPrints(t, "おまえが熱を出したのはテンガイ領域とやらのしわざなんだろ");
         await Task.Delay(500);
 
-        await NagatoPrints(t, "そっちの時空間とはまだ完全に連結を絶たれていない。でも時間の問題。そうなれば最後。");
-        await Task.Delay(500);
-
-        await KyonPrints(t, "どうすりゃいい？");
-        await Task.Delay(500);
-
-        await NagatoPrints(t, "どうにもならない。情報統合思念体は失望している。これで進化の可能性は失われた。");
+        await NagatoPrints(t, "そう");
         await Task.Delay(50);
-        await NagatoPrints(t, "涼宮ハルヒは何もない所から情報を生み出す力を持っていた。");
-        await Task.Delay(50);
-        await NagatoPrints(t, "それは情報統合思念体にもない力。この情報創造能力を解析すれば自律進化の糸口がつかめるかもしれないと考えた。");
-        await Task.Delay(50);
-        await NagatoPrints(t, "あなたに賭ける。");
+        await NagatoPrints(t, "あなたと涼宮ハルヒには手出しをさせない");
         await Task.Delay(500);
 
-        await KyonPrints(t, "何をだよ");
+        await KyonPrints(t, "俺やハルヒのことはいいんだ。自分たちでなんとかするし、現に今もピンピンしてる。手出しされて倒れてんのはおまえじゃないか。やめさせろ。");
         await Task.Delay(500);
 
-        await NagatoPrints(t, "もう一度こちらへ回帰することを我々は望んでる。涼宮ハルヒは重要な監視対象。わたしという固体もあなたには戻ってきて欲しい\nと感じている。");
+        await NagatoPrints(t, "これは私の役目の一つ□□□□情報□□思念体は□□□域との交信□試");
+        await Task.Delay(500);
+
+        await KyonPrints(t, "どうした？");
+        await Task.Delay(500);
+
+        await NagatoPrints(t, "わたしの稼働???????僥儉儕?乕??偆?戝?暘??奧??偲???偵???偰???");
         await Task.Delay(50);
-        await NagatoPrints(t, "また図書館に");
+        await NagatoPrints(t, "???????働乕????抜???偵??側??側??偰??????????側??");
         await Task.Delay(50);
-        await NagatoPrints(t, "sleeping deauty");
+        await NagatoPrints(t, "少し眠る");
     }
 
 
