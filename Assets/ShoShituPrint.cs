@@ -36,20 +36,20 @@ public class ShoShituPrint : MonoBehaviour
         await JikuShusei(t, "時空修正用プログラムをインストールします\n");
         await Task.Delay(1000);
 
-        t.text += (t, ">" + new string('-', 109) + "\n");
+        t.text += (t, "<color=#4ab13e>>" + new string('-', 109) + "\n</color>");
         await Task.Delay(2000);
-        t.text += (t, "=>" + new string('-', 108) + "\n");
+        t.text += (t, "<color=#4ab13e>=>" + new string('-', 108) + "\n</color>");
         await Task.Delay(2000);
         for (int i = 2; i < 108; ++i)
         {
-            t.text += (new string('=', i) + ">" + new string('-', 110 - i - 1) + "\n");
+            t.text += ("<color=#4ab13e>" + new string('=', i) + ">" + new string('-', 110 - i - 1) + "\n</color>");
             await Task.Delay(17);
         }
-        t.text += (t, new string('=', 108) + ">-\n");
+        t.text += (t, "<color=#4ab13e>" + new string('=', 108) + ">-\n</color>");
         await Task.Delay(3000);
-        t.text += (t, new string('=', 109) + ">\n");
+        t.text += (t, "<color=#4ab13e>" + new string('=', 109) + ">\n</color>");
         await Task.Delay(4000);
-        t.text += (t, new string('=', 110) + "\n\n\n");
+        t.text += (t, "<color=#4ab13e>" + new string('=', 110) + "\n\n\n</color>");
 
         await Task.Delay(2000);
         await JikuShusei(t, "時空修正を開始します\n");
@@ -89,7 +89,7 @@ public class ShoShituPrint : MonoBehaviour
     {
         for (int i = 0; i < tmp.Length; ++i)
         {
-            t.text += tmp[i];
+            t.text += "<color=#4ab13e>" + tmp[i] + "</color>";
             await Task.Delay(17);
         }
     }
