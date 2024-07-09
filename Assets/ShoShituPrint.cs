@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ShoShituPrint : MonoBehaviour
 {
@@ -69,6 +70,8 @@ public class ShoShituPrint : MonoBehaviour
         await JikuShusei(t, "\n三年前の七夕");
 
         await Task.Delay(6000);
+
+        SceneManager.LoadScene("TitleScene");
     }
 
 

@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KyoGakuPrint : MonoBehaviour
 {
@@ -36,6 +37,9 @@ public class KyoGakuPrint : MonoBehaviour
         await NagatoPrints(t, "???????ì≠Âh????î≤???í„??ë§??ë§??˙y??????????ë§??");
         await Task.Delay(50);
         await NagatoPrints(t, "è≠Çµñ∞ÇÈ");
+        await Task.Delay(5000);
+
+        SceneManager.LoadScene("TitleScene");
     }
 
 
