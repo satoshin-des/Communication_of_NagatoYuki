@@ -24,7 +24,7 @@ public class SceneChanges : MonoBehaviour
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#else
+#elif (! UNITY_WEBPLAYER) && (! UNITY_WEBGL)
         Application.Quit();
 #endif
     }
