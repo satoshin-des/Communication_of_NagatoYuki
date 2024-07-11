@@ -57,6 +57,8 @@ public class YuUtuPrint : MonoBehaviour
         for (int i = 0; i < tmp.Length; ++i)
         {
             t.text += tmp[i];
+            ScrollRect.verticalNormalizedPosition = 0;
+            t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
 
             if (tmp[i] == '。') await Task.Delay(1000);
             else if (tmp[i] == '、') await Task.Delay(500);
@@ -72,6 +74,8 @@ public class YuUtuPrint : MonoBehaviour
         for (int i = 0; i < tmp.Length; ++i)
         {
             t.text += tmp[i];
+            ScrollRect.verticalNormalizedPosition = 0;
+            t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
 
             if (tmp[i] == '。') await Task.Delay(1000);
             else if (tmp[i] == '、') await Task.Delay(500);
