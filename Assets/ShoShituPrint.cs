@@ -9,9 +9,11 @@ using UnityEngine.SceneManagement;
 public class ShoShituPrint : MonoBehaviour
 {
     public Text t;
+    public ScrollRect ScrollRect;
 
     async void Start()
     {
+        ScrollRect.verticalNormalizedPosition = 0;
         await NagatoPrints(t, "これをあなたが読んでいる時、わたしはわたしでないだろう。");
         await Task.Delay(500);
 
@@ -38,19 +40,31 @@ public class ShoShituPrint : MonoBehaviour
         await Task.Delay(1000);
 
         t.text += (t, "<color=#4ab13e>>" + new string('-', 109) + "\n</color>");
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
         await Task.Delay(2000);
         t.text += (t, "<color=#4ab13e>=>" + new string('-', 108) + "\n</color>");
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
         await Task.Delay(2000);
         for (int i = 2; i < 108; ++i)
         {
             t.text += ("<color=#4ab13e>" + new string('=', i) + ">" + new string('-', 110 - i - 1) + "\n</color>");
+            ScrollRect.verticalNormalizedPosition = 0;
+            t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
             await Task.Delay(17);
         }
         t.text += (t, "<color=#4ab13e>" + new string('=', 108) + ">-\n</color>");
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
         await Task.Delay(3000);
         t.text += (t, "<color=#4ab13e>" + new string('=', 109) + ">\n</color>");
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
         await Task.Delay(4000);
         t.text += (t, "<color=#4ab13e>" + new string('=', 110) + "\n\n\n</color>");
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
 
         await Task.Delay(2000);
         await JikuShusei(t, "時空修正を開始します\n");
@@ -78,9 +92,14 @@ public class ShoShituPrint : MonoBehaviour
     async Task NagatoPrints(Text t, string tmp)
     {
         t.text += "\n\nYUKI.N> ";
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
+
         for (int i = 0; i < tmp.Length; ++i)
         {
             t.text += tmp[i];
+            ScrollRect.verticalNormalizedPosition = 0;
+            t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
 
             if (tmp[i] == '。') await Task.Delay(1000);
             else if (tmp[i] == '、') await Task.Delay(500);
@@ -93,6 +112,8 @@ public class ShoShituPrint : MonoBehaviour
         for (int i = 0; i < tmp.Length; ++i)
         {
             t.text += "<color=#4ab13e>" + tmp[i] + "</color>";
+            ScrollRect.verticalNormalizedPosition = 0;
+            t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
             await Task.Delay(17);
         }
     }

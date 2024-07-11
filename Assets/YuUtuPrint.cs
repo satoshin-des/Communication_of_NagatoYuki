@@ -9,9 +9,11 @@ using UnityEngine.SceneManagement;
 public class YuUtuPrint : MonoBehaviour
 {
     public Text t;
+    public ScrollRect ScrollRect;
 
     async void Start()
     {
+        ScrollRect.verticalNormalizedPosition = 0;
         await NagatoPrints(t, "Œ©‚¦‚Ä‚éH");
         await Task.Delay(500);
 
@@ -50,6 +52,8 @@ public class YuUtuPrint : MonoBehaviour
     async Task NagatoPrints(Text t, string tmp)
     {
         t.text += "\n\nYUKI.N> ";
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
         for (int i = 0; i < tmp.Length; ++i)
         {
             t.text += tmp[i];
@@ -63,6 +67,8 @@ public class YuUtuPrint : MonoBehaviour
     async Task KyonPrints(Text t, string tmp)
     {
         t.text += "\n\nKYON> ";
+        ScrollRect.verticalNormalizedPosition = 0;
+        t.GetComponent<ContentSizeFitter>().SetLayoutVertical();
         for (int i = 0; i < tmp.Length; ++i)
         {
             t.text += tmp[i];
