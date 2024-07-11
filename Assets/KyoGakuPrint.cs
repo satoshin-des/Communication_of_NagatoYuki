@@ -41,7 +41,8 @@ public class KyoGakuPrint : MonoBehaviour
         await NagatoPrints(t, "è≠Çµñ∞ÇÈ");
         await Task.Delay(5000);
 
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("TitleScene-imp");
+        //SceneManager.LoadScene("TitleScene");
     }
 
 

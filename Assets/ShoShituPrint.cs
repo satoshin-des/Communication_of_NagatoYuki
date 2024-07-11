@@ -85,7 +85,8 @@ public class ShoShituPrint : MonoBehaviour
 
         await Task.Delay(6000);
 
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("TitleScene-imp");
+        //SceneManager.LoadScene("TitleScene");
     }
 
 

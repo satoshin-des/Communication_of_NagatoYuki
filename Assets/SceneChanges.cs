@@ -19,13 +19,4 @@ public class SceneChanges : MonoBehaviour
     {
         SceneManager.LoadScene("KyoGakuScene");
     }
-
-    public void Quit()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#elif (! UNITY_WEBPLAYER) && (! UNITY_WEBGL)
-        Application.Quit();
-#endif
-    }
 }

@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TitleScene.unity
     guid: d5672af01a8c28d4eaebf6aa8a9b89ef
+  - enabled: 1
+    path: Assets/Scenes/TitleScene-imp.unity
+    guid: aa713dce56c16384497314d0e3ba0621
   - enabled: 1
     path: Assets/Scenes/ShoShituScene.unity
     guid: a6109af3d445adf43a617b60926e8a2f
